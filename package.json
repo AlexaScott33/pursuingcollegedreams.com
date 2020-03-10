@@ -1,0 +1,22 @@
+{
+  "name": "pursuingcollegedreams.com",
+  "version": "1.0.0",
+  "description": "Pursuing College Dreams",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexaScott33/pursuingcollegedreams.com.git"
+  },
+  "author": "Alexa Scott",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexaScott33/pursuingcollegedreams.com/issues"
+  },
+  "homepage": "https://github.com/AlexaScott33/pursuingcollegedreams.com#readme",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}
