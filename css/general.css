@@ -1,0 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
+.no-bullets {
+    list-style: none !important;
+}
