@@ -14,6 +14,7 @@
         <link rel="stylesheet" type="text/css" href="/css/reset.css">
         <link rel="stylesheet" type="text/css" href="/css/general.css">
         <link rel="stylesheet" type="text/css" href="/css/header.css">
+        <link rel="stylesheet" type="text/css" href="/css/home.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700&display=swap" rel="stylesheet">
         <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
     </head>
@@ -21,11 +22,14 @@
         <script> 
             $(function(){
               $("#header").load("embeds/header.html");
+              $("#home-hero").load("embeds/home/home-hero.html");
               $("#footer").load("embeds/footer.html"); 
             });
         </script> 
     
         <div id="header"></div>
+
+        <div id="home-hero" class="home-hero-container"></div>
 
         <div id="footer"></div>
         
