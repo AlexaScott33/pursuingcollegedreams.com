@@ -1,0 +1,50 @@
+.home-mission-container {
+    width: 100%;
+    height: 450px;
+}
+
+.mission-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 80px;
+}
+
+.mission-container .text-container {
+    font-family: 'Lato', regular;
+    width: 540px;
+    position: absolute;
+    left: 100px;
+    z-index: 8;
+    background-color: #fff;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    border-radius: 2px;
+    padding: 40px;
+    margin-top: 50px;
+}
+
+.text-container h2 {
+    color: #3DC9BC;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.text-container p {
+    color: #555;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.mission-container .image-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),
+                url(/assets/images/home-mission.jpeg);
+    width: calc(100% - 540px);
+    height: 450px;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+    background-position: center center!important;
+    position: absolute;
+    right: 0;
+}
