@@ -31,4 +31,6 @@ img {
 
 .nav-container ul a {
     color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
 }
