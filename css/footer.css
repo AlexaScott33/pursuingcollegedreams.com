@@ -1,0 +1,31 @@
+.footer-container {
+    width: 100%;
+}
+
+footer {
+    background-color: #555;
+    color: #fff;
+    padding: 40px;
+}
+
+footer .text-container {
+    display: flex;
+    font-size: 14px;
+}
+
+.company-text {
+    margin-right: 20px;
+}
+
+
+.footer-list {
+    display: flex;
+}
+
+.footer-list li a {
+    color: #fff;
+}
+
+.footer-separator {
+    margin: 0 5px;
+}
