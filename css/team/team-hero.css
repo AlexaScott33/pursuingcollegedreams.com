@@ -14,14 +14,15 @@
     background-position: center center!important;
 }
 
-.about-team-container h2 {
+.about-team-container h1 {
     color: #3DC9BC;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 50px;
     text-transform: uppercase;
 }
 
 .about-team-container .secondary-text {
     color: #555;
     font-size: 22px;
+    font-weight: 300;
 }

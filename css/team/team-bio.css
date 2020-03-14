@@ -1,0 +1,75 @@
+.team-bio-container {
+    width: 100%;
+    height: 100%;
+}
+
+.team-flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.team-wrapper {
+    display: flex;
+    width: calc(100% - 100px);
+    margin-left: 50px;
+    margin-right: 50px; 
+}
+
+.team-image-one {
+    background: url(/assets/images/husani.jpeg);
+    width: 400px;
+    height: 500px;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+    background-position: center center!important;
+    border-radius: 5px;
+}
+
+.team-image-two {
+    background: url(/assets/images/ashley.jpeg);
+    width: 400px;
+    height: 500px;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+    background-position: center center!important;
+    border-radius: 5px;
+}
+
+.team-image-three {
+    background: url(/assets/images/kimdinh.jpeg);
+    width: 400px;
+    height: 500px;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+    background-position: center center!important;
+    border-radius: 5px;
+}
+
+.bio-container {
+    width: calc(100% - 400px);
+}
+
+.bio-container h2 {
+    color: #3DC9BC;
+    font-weight: 300;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.bio-container .bio-subtitle {
+    color: #555;
+    font-weight: 300;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.bio-text p {
+    font-family: 'Lato', regular;
+    color: #555;
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
