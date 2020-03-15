@@ -19,6 +19,7 @@ img {
 .nav-container ul {
     display: flex;
     padding-top: 10px;
+    letter-spacing: 2px;
 }
 
 .nav-container ul li {
