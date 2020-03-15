@@ -52,3 +52,21 @@
     max-width: 400px;
     margin: auto;
 }
+
+.learn-more-button-container {
+    width: 330px;
+    margin: 100px auto;
+}
+
+.learn-more-button-container a {
+    font-family: 'Lato', regular;
+    color: #fff;
+    background-color: #555;
+    padding: 20px 50px;
+    border-radius: 35px;
+    text-transform: uppercase;
+}
+
+.learn-more-button-container a:hover {
+    opacity: 0.9;
+}
