@@ -1,0 +1,22 @@
+.form-content-container {
+    width: 600px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    border-radius: 2px;
+    top: 335px;
+    left: 460px;
+    padding: 40px;
+}
+
+label {
+    text-transform: uppercase;
+}
+
+.first-name-input, .last-name-input {
+    display: inline;
+}
+
+.last-name-input {
+    float: right;
+}

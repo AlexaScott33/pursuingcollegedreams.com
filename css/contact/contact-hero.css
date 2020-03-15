@@ -33,3 +33,9 @@
 .contact-hero-image-container .inline-secondary-text {
     color: #4374B1;
 }
+
+.form-background-container {
+    background-color: #4374B1;
+    background-image: -webkit-linear-gradient(30deg, #f1f3f4 50%, #cff1ef 50%);
+    min-height: 500px;
+  }

@@ -1,18 +1,27 @@
 <?php
+    $nameErr  = "";
+
     if($_POST["submit"]) {
         $recipient="arscott4792@gmail.com";
         $subject="Form to email message";
-        $sender=$_POST["sender"];
+        $senderFirstName=$_POST["senderFirstName"] . ' ' . $_POST["senderLastName"];
+        $senderLastName=$_POST["senderLastName"];
+        $senderAge=$_POST["senderAge"];
         $senderEmail=$_POST["senderEmail"];
         $message=$_POST["message"];
 
-        $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+        if (empty($senderFirstName)) {
+            $nameErr = "Name is required";
+          }
 
-        mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+        $mailBody="Name: $senderFirstName $senderLastName\nAge/Grade: $senderAge\nEmail: $senderEmail\n\n$message";
+
+        mail($recipient, $subject, $mailBody, "From: $senderFirstName $senderLastName <$senderEmail>");
 
         $thankYou="<p>Thank you! Your message has been sent.</p>";
     }
 ?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -31,6 +40,7 @@
         <link rel="stylesheet" type="text/css" href="/css/header.css">
         <link rel="stylesheet" type="text/css" href="/css/footer.css">
         <link rel="stylesheet" type="text/css" href="/css/contact/contact-hero.css">
+        <link rel="stylesheet" type="text/css" href="/css/contact/contact-form.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700&display=swap" rel="stylesheet">
         <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
     </head>
@@ -46,19 +56,37 @@
         <div id="header"></div>
 
         <div id="contact-hero" class="contact-hero-container"></div>
+        
+        <div class="form-content-container">
+            <form method="post" action="contact.php">
+                <div class="first-name-input">
+                    <label>First Name <span>*</span></label>
+                    <input name="senderFirstName"> <span class="error">* <?php echo $nameErr;?></span>
+                </div>
 
-        <form method="post" action="contact.php">
-            <label>Name:</label>
-            <input name="sender">
-
-            <label>Email address:</label>
-            <input name="senderEmail">
-
-            <label>Message:</label>
-            <textarea rows="5" cols="20" name="message"></textarea>
-
-            <input type="submit" name="submit">
-        </form>
+                <div class="last-name-input">
+                    <label>Last Name <span>*</span></label>
+                    <input name="senderLastName">
+                </div>
+                
+                <div class="age-input">
+                    <label>Age/Grade <span>*</span></label>
+                    <input name="senderAge">
+                </div>
+                
+                <div class="email-input">
+                    <label>Email address <span>*</span></label>
+                    <input name="senderEmail">
+                </div>
+                
+                <div class="message-input">
+                    <label>Message <span>*</span></label>
+                    <textarea rows="5" cols="20" name="message"></textarea>
+                </div>
+            
+                <input type="submit" name="submit">
+            </form>
+        </div>
 
         <div id="footer" class="footer-container"></div>
         
