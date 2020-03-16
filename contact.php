@@ -1,22 +1,38 @@
 <?php
-    $nameErr  = "";
+    // $firstNameErr  = "";
+    // $lastNameErr  = "";
+    // $ageErr  = "";
+    // $emailErr = "";
 
     if($_POST["submit"]) {
         $recipient="arscott4792@gmail.com";
         $subject="Form to email message";
-        $senderFirstName=$_POST["senderFirstName"] . ' ' . $_POST["senderLastName"];
+        $senderFirstName=$_POST["senderFirstName"];
         $senderLastName=$_POST["senderLastName"];
         $senderAge=$_POST["senderAge"];
         $senderEmail=$_POST["senderEmail"];
         $message=$_POST["message"];
+        $headers = "From: $senderFirstName $senderLastName <$senderEmail>";
 
-        if (empty($senderFirstName)) {
-            $nameErr = "Name is required";
-          }
+        // if (empty($senderFirstName)) {
+        //     $firstNameErr = "First name is required";
+        // }
 
-        $mailBody="Name: $senderFirstName $senderLastName\nAge/Grade: $senderAge\nEmail: $senderEmail\n\n$message";
+        // if (empty($senderLastName)) {
+        //     $lastNameErr = "Last name is required";
+        // }
 
-        mail($recipient, $subject, $mailBody, "From: $senderFirstName $senderLastName <$senderEmail>");
+        // if (empty($senderAge)) {
+        //     $ageErr = "Age is required";
+        // }
+
+        // if (empty($senderEmail)) {
+        //     $emailErr = "Email is required";
+        // }
+
+        $mailBody="Name: $senderFirstName $senderLastName\nAge: $senderAge\nEmail: $senderEmail\n\n$message";
+
+        mail($recipient, $subject, $mailBody, $headers);
 
         $thankYou="<p>Thank you! Your message has been sent.</p>";
     }
@@ -56,35 +72,43 @@
         <div id="header"></div>
 
         <div id="contact-hero" class="contact-hero-container"></div>
-        
+
         <div class="form-content-container">
             <form method="post" action="contact.php">
-                <div class="first-name-input">
-                    <label>First Name <span>*</span></label>
-                    <input name="senderFirstName"> <span class="error">* <?php echo $nameErr;?></span>
-                </div>
 
-                <div class="last-name-input">
-                    <label>Last Name <span>*</span></label>
-                    <input name="senderLastName">
+                <div class="flex-input-container mb-40">
+                    <div class="first-name-input name-input">
+                        <label class="mb-10">First Name <span class="error">* </span></label>
+                        <input name="senderFirstName">
+                    </div>
+
+                    <div class="last-name-input name-input">
+                        <label class="mb-10">Last Name <span class="error">* </span></label>
+                        <input name="senderLastName">
+                    </div>
                 </div>
                 
-                <div class="age-input">
-                    <label>Age/Grade <span>*</span></label>
-                    <input name="senderAge">
+                <div class="flex-input-container">
+                    <div class="age-input name-input">
+                        <label class="mb-10">Age <span class="error">* </span></label>
+                        <input name="senderAge">
+                    </div>
+                    
+                    <div class="email-input name-input">
+                        <label class="mb-10">Email Address <span class="error">* </span></label>
+                        <input name="senderEmail">
+                    </div>
                 </div>
                 
-                <div class="email-input">
-                    <label>Email address <span>*</span></label>
-                    <input name="senderEmail">
-                </div>
-                
-                <div class="message-input">
-                    <label>Message <span>*</span></label>
+                <div class="message-input mt-40">
+                    <label class="mb-10">Message</label>
                     <textarea rows="5" cols="20" name="message"></textarea>
                 </div>
-            
-                <input type="submit" name="submit">
+
+                <div class="submit-input mt-40"> 
+                    <input type="submit" name="submit">
+                </div>
+                
             </form>
         </div>
 
