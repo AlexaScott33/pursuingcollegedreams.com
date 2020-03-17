@@ -29,3 +29,8 @@ footer .text-container {
 .footer-separator {
     margin: 0 5px;
 }
+
+.services-page .footer-container {
+    position: absolute;
+    bottom: 0;
+}
