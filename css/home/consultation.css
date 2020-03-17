@@ -1,22 +1,30 @@
 .home-consultation-container {
     width: 100%;
-    height: 500px;
+    height: 180px;
+    margin-bottom: 100px;
 }
 
 .consultation-container {
     width: 100%;
     height: 100%;
+    display: flex;
+    background-color: #fff;
+    background-image: -webkit-linear-gradient(150deg,#fff 60%, #4374B1 40%);
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
 
 .consultation-container .text-container {
-    padding-left: 50px;
+    margin-top: 30px;
+}
+
+.consultation-container .header-container {
     width: 50%;
 }
 
-.consultation-container .text-container h2 {
-    color: #4374B1;
+.consultation-container .header-container h3 {
+    color: #fff;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 25px;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 2px;
@@ -26,12 +34,13 @@
     color: #555;
     font-weight: 300;
     font-size: 18px;
-    text-transform: uppercase;
     text-align: center;
+    line-height: 24px;
 }
 
 .consultation-container .button-container {
-    
+    width: 150px;
+    margin: 30px auto 0px;
 }
 
 .consultation-container a {
@@ -39,4 +48,12 @@
     background-color: #4374B1;
     font-size: 18px;
     text-transform: uppercase;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.consultation-container a:hover {
+    cursor: pointer;
+    opacity: 0.9;
 }

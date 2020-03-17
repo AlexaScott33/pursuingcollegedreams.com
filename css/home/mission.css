@@ -1,6 +1,7 @@
 .home-mission-container {
     width: 100%;
     height: 500px;
+    margin-bottom: 100px;
 }
 
 .mission-container {
@@ -43,7 +44,7 @@
 
 .mission-container .image-container {
     background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),
-                url(/assets/images/home-hero.jpeg);
+                url(/assets/images/home-mission.jpeg);
     width: 100%;
     height: 500px;
     background-size: cover!important;
