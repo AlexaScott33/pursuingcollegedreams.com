@@ -1,0 +1,42 @@
+.home-consultation-container {
+    width: 100%;
+    height: 500px;
+}
+
+.consultation-container {
+    width: 100%;
+    height: 100%;
+}
+
+.consultation-container .text-container {
+    padding-left: 50px;
+    width: 50%;
+}
+
+.consultation-container .text-container h2 {
+    color: #4374B1;
+    font-weight: 300;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.consultation-container .text-container p {
+    color: #555;
+    font-weight: 300;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.consultation-container .button-container {
+    
+}
+
+.consultation-container a {
+    color: #fff;
+    background-color: #4374B1;
+    font-size: 18px;
+    text-transform: uppercase;
+}
