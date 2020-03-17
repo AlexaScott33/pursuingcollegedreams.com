@@ -70,7 +70,8 @@
     font-family: 'Lato', regular;
     color: #555;
     font-size: 16px;
-    line-height: 24px;
+    font-weight: 300;
+    line-height: 26px;
     margin-right: 100px;
     margin-left: 100px;
 }

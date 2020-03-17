@@ -8,10 +8,16 @@
     background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),
                 url(/assets/images/team-hero.jpeg);
     width: 100%;
-    height: 500px;
+    height: 600px;
     background-size: cover!important;
     background-repeat: no-repeat!important;
     background-position: center center!important;
+}
+
+@media (max-width: 1550px) {
+    .team-hero-image-container {
+        height: 500px;
+    }
 }
 
 .about-team-container h1 {
