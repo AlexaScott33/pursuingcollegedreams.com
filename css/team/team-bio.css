@@ -58,11 +58,12 @@
 }
 
 .bio-container .bio-subtitle {
-    color: #555;
+    color: #4374B1;
     font-weight: 300;
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
+    letter-spacing: 2px;
 }
 
 .bio-text p {
