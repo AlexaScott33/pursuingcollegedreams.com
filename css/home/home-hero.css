@@ -22,16 +22,29 @@
     padding-top: 50px;
 }
 
+@media only screen and (max-width: 768px) {
+    .hero-image-container h1 {
+        font-size: 30px;
+        letter-spacing: 5px;
+        line-height: 35px;
+    }
+}
+
 .hero-image-container .secondary-text {
     font-family: 'Lato', regular;
     color: #555;
     text-align: center;
-
     letter-spacing: 1px;
 }
 
 .hero-image-container .subtitle {
     font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-image-container .subtitle  {
+        font-size: 18px;
+    }
 }
 
 .hero-image-container .secondary-text.learn-more a {
