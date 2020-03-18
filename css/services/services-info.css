@@ -25,12 +25,11 @@
 
 .services-wrapper .service-icon-wrapper {
     background-color: #4374B1;
-    height: 50px;
+    height: 60px;
+    padding: 5px 0px;
 }
 
 .services-wrapper .service-image {
-    width: 50px;
-    height: 63px;
     background-size: cover!important;
     background-repeat: no-repeat!important;
     background-position: center center!important;
@@ -38,19 +37,22 @@
     /* border-radius: 5px; */
 }
 
-.services-wrapper .service-image.individual {
-    background: url(/assets/images/individual-icon.svg);
-}
 
 .services-wrapper .service-image.package-one {
+    width: 50px;
+    height: 63px;
     background: url(/assets/images/package-one-icon.svg);
 }
 
 .services-wrapper .service-image.package-two {
+    width: 50px;
+    height: 63px;
     background: url(/assets/images/package-two-icon.svg);
 }
 
 .services-wrapper .service-image.package-three {
+    width: 57px;
+    height: 63px;
     background: url(/assets/images/package-three-icon.svg);
 }
 
@@ -95,10 +97,7 @@
 
 .learn-more-button-container a {
     font-family: 'Lato', regular;
-    color: #fff;
-    background-color: #4374B1;
-    padding: 20px 50px;
-    border-radius: 35px;
+    color: #4374B1;
     text-transform: uppercase;
 }
 
