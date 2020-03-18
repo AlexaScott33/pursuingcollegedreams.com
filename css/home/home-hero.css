@@ -22,7 +22,7 @@
     padding-top: 50px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .hero-image-container h1 {
         font-size: 30px;
         letter-spacing: 5px;
@@ -41,7 +41,7 @@
     font-size: 20px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .hero-image-container .subtitle  {
         font-size: 18px;
     }
