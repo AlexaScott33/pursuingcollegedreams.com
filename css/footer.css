@@ -10,6 +10,7 @@ footer {
 
 footer .text-container {
     display: flex;
+    justify-content: space-around;
     font-size: 14px;
 }
 
@@ -17,12 +18,7 @@ footer .text-container {
     margin-right: 20px;
 }
 
-
-.footer-list {
-    display: flex;
-}
-
-.footer-list li a {
+.company-text a {
     color: #fff;
 }
 
@@ -33,4 +29,13 @@ footer .text-container {
 .services-page .footer-container {
     position: absolute;
     bottom: 0;
+}
+
+.footer-instagram {
+    background: url(/assets/images/footer-instagram.svg);
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+    background-position: center center!important;
+    width: 25px;
+    height: 25px;
 }
