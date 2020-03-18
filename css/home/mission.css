@@ -4,6 +4,12 @@
     margin-bottom: 100px;
 }
 
+@media only screen and (max-width: 767px) {
+    .home-mission-container {
+        height: auto;
+    }
+}
+
 .mission-container {
     width: 100%;
     height: 100%;
@@ -21,6 +27,18 @@
     padding: 50px;
     height: 280px;
     margin-top: 110px;
+}
+
+@media only screen and (max-width: 767px) {
+    .mission-container .text-container {
+        left: 0;
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+        margin-top: 0px;
+        padding: 20px;
+        top: 410px;
+    }
 }
 
 .mission-container .text-container h2 {
