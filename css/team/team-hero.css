@@ -14,7 +14,7 @@
     background-position: center center!important;
 }
 
-@media (max-width: 1550px) {
+@media only screen and (max-width: 1550px) {
     .team-hero-image-container {
         height: 500px;
     }

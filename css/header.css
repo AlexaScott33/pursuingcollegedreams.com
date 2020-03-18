@@ -42,3 +42,31 @@ img {
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
+
+.icon .fa {
+    font-size: 24px;
+    color: #fff;
+    line-height: 42px;
+}
+
+.mobile-nav-container {
+    padding: 20px;
+    position: absolute;
+    top: 82px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 12;
+}
+
+.mobile-nav-container ul li {
+    height: 40px;
+}
+
+.mobile-nav-container ul li a {
+    color: #4374B1;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 24px;
+}

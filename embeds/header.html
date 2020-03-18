@@ -1,5 +1,5 @@
 <header>
-    <div class="header-container">
+    <div class="header-container hide-mobile">
         <div class="logo-container">
             <a href="/">
                 <img src="assets/images/logo-transparent.png" alt="PCD Logo">
@@ -27,4 +27,42 @@
             </nav>
         </div>
     </div>
+
+    <div class="header-container show-mobile">
+        <div class="logo-container">
+            <a href="/">
+                <img src="assets/images/logo-transparent.png" alt="PCD Logo">
+            </a>
+        </div>
+        <a href="javascript:void(0);" class="icon">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div class="mobile-nav-container hide">
+            <nav>
+                <ul class="no-bullets">
+                    <li>
+                        <a href="index.html" title="Home">Home</a>
+                    </li>
+                    <li>
+                        <a href="team.html" title="The Team">The Team</a>
+                    </li>
+                    <li>
+                        <a href="services-and-packages.html" title="Services & Packages">Services & Packages</a>
+                    </li>
+                    <!-- <li>
+                        <a href="resources.html" title="Resources">Resources</a>
+                    </li> -->
+                    <li>
+                        <a href="contact.html" title="Contact Us">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 </header>
+
+<script>
+    $(".header-container .icon").on("click", function() {
+        $(".mobile-nav-container").toggleClass("hide");
+    });
+</script>
