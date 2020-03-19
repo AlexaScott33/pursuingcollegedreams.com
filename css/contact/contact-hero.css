@@ -22,12 +22,26 @@
     letter-spacing: 5px;
 }
 
+@media only screen and (max-width: 767px) {
+    .contact-hero-image-container h1 {
+        font-size: 30px;
+        letter-spacing: 1px;
+        line-height: 35px;
+    }
+}
+
 .contact-hero-image-container .secondary-text {
     font-family: 'Lato', regular;
     color: #555;
     text-align: center;
     font-style: italic;
     letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 767px) {
+    .contact-hero-image-container .secondary-text {
+       margin: 0px 20px;
+    }
 }
 
 .contact-hero-image-container .inline-secondary-text {

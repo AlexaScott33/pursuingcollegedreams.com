@@ -10,14 +10,38 @@
     height: 500px;
 }
 
+@media only screen and (max-width: 767px) {
+    .form-content-container {
+        width: 100%;
+        position: initial;
+        top: 380px;
+        left: 0;
+        padding: 20px;
+        height: auto;
+    }
+}
+
 .flex-input-container {
     display: flex;
+}
+
+@media only screen and (max-width: 767px) {
+    .flex-input-container {
+        display: initial;
+    }
 }
 
 .name-input {
     display: flex;
     flex-direction: column;
     width: 50%;
+}
+
+@media only screen and (max-width: 767px) {
+    .name-input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 .first-name-input, .age-input {
@@ -27,6 +51,12 @@
 .message-input {
     display: flex;
     flex-direction: column;
+}
+
+@media only screen and (max-width: 767px) {
+    .message-input {
+        margin-top: 20px !important;
+    }
 }
 
 label {
@@ -41,6 +71,12 @@ input {
     font-size: 14px;
 }
 
+@media only screen and (max-width: 767px) {
+    input {
+        padding: 10px;
+    }
+}
+
 .error { 
     color: red;
 }
@@ -48,6 +84,12 @@ input {
 .submit-input {
     width: 250px;
     margin: auto;
+}
+
+@media only screen and (max-width: 767px) {
+    .submit-input {
+        margin-bottom: 20px !important;
+    }
 }
 
 .submit-input input {
