@@ -14,6 +14,13 @@
     font-weight: 300;
 }
 
+@media only screen and (max-width: 767px) {
+    .services-hero-image-container h1 {
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+}
+
 .services-hero-image-container .secondary-text {
     font-family: 'Lato', regular;
     width: 780px;
@@ -21,4 +28,17 @@
     text-align: center;
     line-height: 24px;
     margin: auto;
+}
+
+@media only screen and (max-width: 800px) {
+    .services-hero-image-container .secondary-text {
+        line-height: 22px;
+        width: calc(100% - 40px);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .services-hero-image-container .secondary-text {
+        font-size: 16px;
+    }
 }

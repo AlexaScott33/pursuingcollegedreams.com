@@ -5,7 +5,17 @@
 
 .services-flex-container {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin: 0px 50px;
+    width: calc(100% - 50px);
+}
+
+@media only screen and (max-width: 767px) {
+    .services-flex-container {
+        margin: 0px 20px !important;
+        width: calc(100% - 20px);
+    }
 }
 
 .service-info-container {
@@ -18,9 +28,34 @@
     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
 
+@media only screen and (max-width: 1024px) {
+    .services-wrapper {
+        width: calc(50% - 50px);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .services-wrapper {
+        width: calc(100% - 20px);
+        margin-top: 20px;
+        margin-right: 0px;
+    }
+}
+
 .services-wrapper:last-child {
     margin-right: 0px;
-    width: 33%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .services-wrapper:last-child {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .services-wrapper:last-child {
+        margin-top: 20px;
+    }
 }
 
 .services-wrapper .service-icon-wrapper {
@@ -91,8 +126,14 @@
 }
 
 .learn-more-button-container {
-    width: 330px;
+    width: 250px;
     margin: 100px auto;
+}
+
+@media only screen and (max-width: 767px) {
+    .learn-more-button-container {
+        margin: 30px auto;
+    }
 }
 
 .learn-more-button-container a {
