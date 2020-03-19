@@ -44,6 +44,30 @@
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .team-hero-image-container {
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .team-hero-image-container {
+        height: 170px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .team-hero-image-container {
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .team-hero-image-container {
+        height: 130px;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     .about-team-container {
         margin-left: 20px !important;
