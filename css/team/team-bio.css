@@ -8,6 +8,12 @@
     flex-direction: column;
 }
 
+@media only screen and (max-width: 767px) {
+    .team-flex-container  {
+        margin-top: 20px !important;
+    }
+}
+
 .team-wrapper {
     display: flex;
     width: calc(100% - 100px);
@@ -15,38 +21,76 @@
     margin-right: 50px; 
 }
 
-.team-image-one {
-    background: url(/assets/images/ashley.jpeg);
+@media only screen and (max-width: 767px) {
+    .team-wrapper  {
+        margin-left: 0px;
+        margin-right: 20px;
+        width: 100%;
+    }
+}
+
+.team-image {
     width: 400px;
     height: 500px;
     background-size: cover!important;
     background-repeat: no-repeat!important;
     background-position: center center!important;
     border-radius: 5px;
+}
+
+@media only screen and (max-width: 960px) {
+    .team-image {
+        width: 350px;
+        height: 450px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .team-image {
+        width: 250px;
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .team-image  {
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+
+.team-image-one {
+    background: url(/assets/images/ashley.jpeg);
 }
 
 .team-image-two {
     background: url(/assets/images/husani.jpeg);
-    width: 400px;
-    height: 500px;
-    background-size: cover!important;
-    background-repeat: no-repeat!important;
-    background-position: center center!important;
-    border-radius: 5px;
 }
 
 .team-image-three {
     background: url(/assets/images/kimdinh.jpeg);
-    width: 400px;
-    height: 500px;
-    background-size: cover!important;
-    background-repeat: no-repeat!important;
-    background-position: center center!important;
-    border-radius: 5px;
 }
 
 .bio-container {
     width: calc(100% - 400px);
+}
+
+@media only screen and (max-width: 960px) {
+    .bio-container {
+        width: calc(100% - 350px);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .bio-container {
+        width: calc(100% - 250px);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .bio-container {
+        width: 100%;
+    }
 }
 
 .bio-container h2 {
@@ -55,6 +99,12 @@
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;
+}
+
+@media only screen and (max-width: 960px) {
+    .bio-container h2 {
+        font-size: 25px;
+    }
 }
 
 .bio-container .bio-subtitle {
@@ -66,6 +116,18 @@
     letter-spacing: 2px;
 }
 
+@media only screen and (max-width: 960px) {
+    .bio-container .bio-subtitle {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .bio-text {
+        margin-top: 20px !important;
+    }
+}
+
 .bio-text p {
     font-family: 'Lato', regular;
     color: #555;
@@ -74,4 +136,20 @@
     line-height: 26px;
     margin-right: 100px;
     margin-left: 100px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .bio-text p {
+        margin-right: 0px;
+        margin-left: 50px;
+    }
+}
+
+
+@media only screen and (max-width: 960px) {
+    .bio-text p {
+        line-height: 22px;
+        margin-left: 20px;
+        font-size: 15px;
+    }
 }
