@@ -4,21 +4,29 @@
     margin-bottom: 100px;
 }
 
+@media only screen and (max-width: 767px) {
+    .home-consultation-container {
+        margin-bottom: 40px;
+        height: auto;
+    }
+}
+
 .consultation-container {
     width: 100%;
     height: 100%;
     display: flex;
     background-color: #fff;
-    background-image: -webkit-linear-gradient(150deg,#fff 60%, #4374B1 40%);
+    background-image: -webkit-linear-gradient(150deg,#fff 70%, #4374B1 30%);
     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
 
 .consultation-container .text-container {
     margin-top: 30px;
+    width: 70%;
 }
 
 .consultation-container .header-container {
-    width: 50%;
+    width: 30%;
 }
 
 .consultation-container .header-container h3 {
@@ -30,12 +38,30 @@
     letter-spacing: 5px;
 }
 
+@media only screen and (max-width: 1024px) {
+    .consultation-container .header-container h3 {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .consultation-container .header-container h3 {
+        letter-spacing: 1px;
+    }
+}
+
 .consultation-container .text-container p {
     color: #555;
     font-weight: 300;
     font-size: 18px;
     text-align: center;
     line-height: 24px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .consultation-container .text-container p {
+        font-size: 16px;
+    }
 }
 
 .consultation-container .button-container {
@@ -56,4 +82,42 @@
 .consultation-container a:hover {
     cursor: pointer;
     opacity: 0.9;
+}
+
+
+/* MOBILE STYLES */
+.mobile-consultation-container .mobile-header-container h3 {
+    color: #4374B1;
+    font-weight: 300;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.mobile-consultation-container .mobile-text-container {
+    padding: 0px 20px;
+}
+
+.mobile-consultation-container .mobile-text-container p {
+    color: #555;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.mobile-consultation-container .mobile-button-container {
+    width: 150px;
+    margin: 30px auto 0px;
+}
+
+.mobile-consultation-container a {
+    color: #fff;
+    background-color: #4374B1;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 14px;
 }

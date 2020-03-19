@@ -2,6 +2,13 @@
     width: 100%;
 }
 
+@media only screen and (max-width: 767px) {
+    .footer-container {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
 footer {
     background-color: #555;
     color: #fff;

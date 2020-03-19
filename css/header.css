@@ -57,6 +57,7 @@ img {
     width: 100%;
     background-color: #fff;
     z-index: 12;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
 
 .mobile-nav-container ul li {

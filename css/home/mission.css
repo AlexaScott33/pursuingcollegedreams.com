@@ -7,6 +7,7 @@
 @media only screen and (max-width: 767px) {
     .home-mission-container {
         height: auto;
+        margin-bottom: 20px;
     }
 }
 
@@ -31,13 +32,13 @@
 
 @media only screen and (max-width: 767px) {
     .mission-container .text-container {
-        left: 0;
         width: 100%;
         height: auto;
         box-shadow: none;
         margin-top: 0px;
         padding: 20px;
         top: 410px;
+        position: initial;
     }
 }
 
@@ -68,4 +69,10 @@
     background-size: cover!important;
     background-repeat: no-repeat!important;
     background-position: center center!important;
+}
+
+@media only screen and (max-width: 767px) {
+    .mission-container .image-container {
+        display: none;
+    }
 }
