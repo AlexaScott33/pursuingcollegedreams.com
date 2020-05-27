@@ -102,6 +102,7 @@ input {
     color: #fff;
     font-size: 12px;
     text-transform: uppercase;
+    -webkit-appearance: none;
 }
 
 .submit-input input:hover {
