@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/AlexaScott33/pursuingcollegedreams.com#readme",
   "dependencies": {
-    "jquery": "^3.4.1"
+    "jquery": "^3.5.1"
   }
 }
